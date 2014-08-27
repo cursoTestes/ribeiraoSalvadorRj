@@ -2,7 +2,7 @@ package br.com.k21;
 
 public class CalculadoraComissao {
 
-	public static Double calcula(Double valorVenda) {
+	public Double calcula(Double valorVenda) {
 		
 		double comissao = valorVenda*5/100;
 		comissao = trataArredondamento(comissao);

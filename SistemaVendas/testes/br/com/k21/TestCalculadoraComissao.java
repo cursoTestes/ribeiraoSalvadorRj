@@ -10,7 +10,7 @@ public class TestCalculadoraComissao {
 		Double valorVenda = 100.0;
 		Double esperado = 5.0;
 		
-		Double comissao = CalculadoraComissao.calcula(valorVenda);
+		Double comissao = new CalculadoraComissao().calcula(valorVenda);
 		
 		assertEquals(esperado, comissao);
 	}
@@ -20,7 +20,7 @@ public class TestCalculadoraComissao {
 		Double valorVenda = 10000.0;
 		Double esperado = 500.0;
 		
-		Double comissao = CalculadoraComissao.calcula(valorVenda);
+		Double comissao = new CalculadoraComissao().calcula(valorVenda);
 		
 		assertEquals(esperado, comissao);
 	}
@@ -30,7 +30,7 @@ public class TestCalculadoraComissao {
 		Double valorVenda = 1.0;
 		Double esperado = 0.05;
 		
-		Double comissao = CalculadoraComissao.calcula(valorVenda);
+		Double comissao = new CalculadoraComissao().calcula(valorVenda);
 		
 		assertEquals(esperado, comissao);
 	}
@@ -40,7 +40,7 @@ public class TestCalculadoraComissao {
 		Double valorVenda = 55.59;
 		Double esperado = 2.77;
 		
-		Double comissao = CalculadoraComissao.calcula(valorVenda);
+		Double comissao = new CalculadoraComissao().calcula(valorVenda);
 		
 		assertEquals(esperado, comissao);
 	}
