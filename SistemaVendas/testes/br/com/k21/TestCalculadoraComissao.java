@@ -13,6 +13,7 @@ public class TestCalculadoraComissao {
 		Double comissao = new CalculadoraComissao().calcula(valorVenda);
 		
 		assertEquals(esperado, comissao);
+		assertEquals(esperado, 0);
 	}
 	
 	@Test
